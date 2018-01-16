@@ -14,7 +14,11 @@ class JobTest extends TestCase
         $jenkins = new Jenkins(new Url('http://localhost:8082'), new User('ad', 'cutewater'));
         foreach ($jenkins->getJobs() as $job) {
             echo $job->getName() . PHP_EOL;
+            foreach ($job->getBuilds() as $build) {
+                echo $build->getNumber();
+            }
         }
+
     }
 
 

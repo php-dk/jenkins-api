@@ -8,11 +8,11 @@ class JobCollection extends TList
 {
     public function __construct($list)
     {
-        parent::__construct(JobInterface::class, $list);
+        parent::__construct(Job::class, $list);
     }
 
     /**
-     * @return \ArrayIterator|\SplObjectStorage|JobInterface[]
+     * @return \ArrayIterator|\SplObjectStorage|Job[]
      */
     public function getIterator()
     {

@@ -38,6 +38,7 @@ class Jenkins
             $jobs->add($factory->createByArray($jobArray));
         }
 
+
         return $jobs;
     }
 }

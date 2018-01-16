@@ -5,9 +5,9 @@ namespace phpdk\jenkinsApi\builds;
 
 class Factory
 {
-    public function createByJson($json): Build
+    public function createByArray(array $build): Build
     {
-        return new Build();
+        return Build::createByArray($build);
     }
 
 }
