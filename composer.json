@@ -1,0 +1,23 @@
+{
+    "name": "php-dk/jenkins-api",
+    "description": "jenkins api",
+    "authors": [
+        {
+            "name": "dimajolkin",
+            "email": "dimajolkin@rambler.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "phpdk\\jenkinsApi\\": "src",
+            "phpdk\\jenkinsApi\\tests\\": "tests"
+        }
+    },
+    "require": {
+        "phpdk/pdk": "dev-master",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    }
+}
